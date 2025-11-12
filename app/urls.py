@@ -8,7 +8,7 @@ from .views import (
 app_name = "app"
 
 router = DefaultRouter()
-router.register(r'especialidades', EspecialidadViewSet)
+router.register(r'especialidades', EspecialidadViewSet, basename="especialidad")
 router.register(r'medicos', MedicoViewSet)
 router.register(r'pacientes', PacienteViewSet)
 router.register(r'turnos', TurnoViewSet)
